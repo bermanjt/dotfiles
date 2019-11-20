@@ -1,0 +1,10 @@
+# SSH multiplexing
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%r@%h:%p
+
+# CAEN
+Host jtb
+	HostName login.engin.umich.edu
+	User bermanjt
+	Compression yes
